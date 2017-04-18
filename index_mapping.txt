@@ -1,0 +1,21 @@
+PUT twitter
+{
+  "mappings": {
+    "tweetDetails": {
+      "properties": {
+        "geo_location": {
+          "type": "geo_point"
+        },
+        "sentiment": {
+          "type": "text"
+        },
+        "hashtag": {
+          "type": "text"
+        },
+        "time": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}
