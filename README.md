@@ -2,10 +2,13 @@
 This program incorporates the framework using Apache Spark Streaming, Kafka, Elasticsearch and Kibana. The framework performs Sentiment analysis of particular hash tags from twitter data in real-time. For example, we want to do the sentiment analysis for all the tweets for #trump, #obama and show them (e.g., positive, neutral, negative, etc.) on a map. When we show tweets on a map, we plot them using their latitude and longitude.
 
 # Functionality
-*> Retrieve tweets using Spark Streaming
-*> Sentiment analysis (Stanford CoreNLP)
-*> Index tweets in Elasticsearch
-*> Live dashboard using Kibana
+* Retrieve tweets using Spark Streaming
+
+* Sentiment analysis (Stanford CoreNLP)
+
+* Index tweets in Elasticsearch
+
+* Live dashboard using Kibana
 
 ## Procedure
 Step 1: Firstly, start zookeeper server and kafka server using the following commands,
@@ -27,7 +30,7 @@ Step 4: Create an index pattern in elasticsearch using kibana console(localhost:
 Step 5: Run the TwitterScrapper.java program and then run the sentimentAnalysis.scala program.
 Sentiments are detected using Stanford CoreNLP. The latitudes and longitudes are retrieved using Google Geocode API(gson-2.3.1).
 
-Step 6: Go to kibana console, and create visualizations and dashboard to view the output(PFA: Output Screenshots folder)
+Step 6: Go to kibana console, and create visualizations and dashboard to view the output(PFA: Dashboard.png)
 
 
 
