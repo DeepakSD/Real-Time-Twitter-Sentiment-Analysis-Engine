@@ -1,7 +1,7 @@
 # Real-Time-Twitter-Sentiment-Analysis-Engine
 This program incorporates the framework using Apache Spark Streaming, Kafka, Elasticsearch and Kibana. The framework performs Sentiment analysis of particular hash tags from twitter data in real-time. For example, we want to do the sentiment analysis for all the tweets for #trump, #obama and show them (e.g., positive, neutral, negative, etc.) on a map. When we show tweets on a map, we plot them using their latitude and longitude.
 
-# Functionality
+## Functionality
 * Retrieve tweets using Spark Streaming
 
 * Sentiment analysis (Stanford CoreNLP)
